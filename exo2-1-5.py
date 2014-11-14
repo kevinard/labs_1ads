@@ -10,5 +10,9 @@ n = None
 while type(n) is not int:
     n = eval(input("Entrez un entier : "))
 
+somme = 0
+
 for i in range(n+1):
-    print(str(i)+"**2 =", i**2)
+    somme += i**2
+
+print("La somme des", n, "premiers entiers est :", somme)
