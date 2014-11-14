@@ -18,5 +18,6 @@ elif montant > 500:
     remise = 0.08
 
 print("Remise de", str(remise*100)+"%")
+print("Le montant de la remise est : ", montant*remise)
 print("Le montant après remise est : ", montant-(montant*remise))
 
