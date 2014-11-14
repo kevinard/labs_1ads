@@ -5,8 +5,6 @@
 # Ecrire un programme faisant saisir trois nombres réels x, y, z à l’utilisateur et qui les trie par ordre croissant
 # (à la fin du déroulement du programme x ≤ y ≤ z).
 
-x, y, z = None, None, None
-
 x = eval(input("Entrez le premier nombre : "))
 y = eval(input("Entrez le second nombre : "))
 z = eval(input("Entrez le troisième nombre : "))
