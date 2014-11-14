@@ -1,0 +1,14 @@
+.Python
+.sass-cache
+env
+.env
+bin
+lib
+include
+.DS_Store
+*.pyc
+.idea
+*~
+tmp
+logs
+.chpwd
