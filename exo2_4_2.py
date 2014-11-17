@@ -37,10 +37,18 @@ def jouer(joueur_courant, nb_allumettes):
 
         joueur_courant = 2
     else:
-        allumettes = random.randint(1, 3)
+        allumettes = choix_ordinateur()
         print("L'ordi a pris", allumettes, "allumettes.")
         joueur_courant = 1
 
     return joueur_courant, nb_allumettes-allumettes
+
+
+def choix_ordinateur():
+    return random.randint(1, 3)
+
+
+def choix_ordinateur_ia(nb_allumettes):
+    pass
 
 jeu_allumettes()
