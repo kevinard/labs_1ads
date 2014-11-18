@@ -13,6 +13,27 @@ def fibonacci(n):
     elif n == 1:
         return 1
     elif n >= 2:
+        precedent1 = 0
+        precedent2 = 1
+        terme = 0
+
+        for i in range(2, n+1):
+            terme = precedent1+precedent2
+            precedent1 = precedent2
+            precedent2 = terme
+
+        return terme
+    else:
+        print("Erreur : n doit être >= 0")
+        return -1
+
+
+def fibonacci_recursive(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    elif n >= 2:
         return fibonacci(n-1)+fibonacci(n-2)
     else:
         print("Erreur : n doit être >= 0")
