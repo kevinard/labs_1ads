@@ -6,6 +6,12 @@
 # qui à partir d’un terme de la suite calcule le suivant. On pourra, si on le souhaite, traiter les termes de la
 # suite sous forme de chaînes de caractère plutôt que sous forme de nombres.
 
+# 1
+# 11
+# 21
+# 1211
+# 111221
+# 312211
 
 def conway_next(n):
     compte = 0
