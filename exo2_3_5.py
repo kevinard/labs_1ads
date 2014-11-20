@@ -38,6 +38,7 @@ def conway_next(n):
 def conway(n):
     if type(n) is not int or n < 1:
         print("Erreur : n doit être un entier positif.")
+        return -1
 
     print("Terme 1 = 1")
 

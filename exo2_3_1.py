@@ -34,7 +34,7 @@ def fibonacci_recursive(n):
     elif n == 1:
         return 1
     elif n >= 2:
-        return fibonacci(n-1)+fibonacci(n-2)
+        return fibonacci_recursive(n-1)+fibonacci_recursive(n-2)
     else:
         print("Erreur : n doit être >= 0")
         return -1

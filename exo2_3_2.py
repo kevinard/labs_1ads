@@ -8,6 +8,7 @@
 def syracuse(n, a):
     if type(a) is not int or a < 0:
         print("Erreur : a doit être un entier positif.")
+        return -1
 
     print(a, end=" ")
 
