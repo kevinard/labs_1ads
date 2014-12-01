@@ -27,18 +27,6 @@ def fibonacci(n):
         print("Erreur : n doit être >= 0")
         return -1
 
-
-def fibonacci_recursive(n):
-    if n == 0:
-        return 0
-    elif n == 1:
-        return 1
-    elif n >= 2:
-        return fibonacci_recursive(n-1)+fibonacci_recursive(n-2)
-    else:
-        print("Erreur : n doit être >= 0")
-        return -1
-
 print("n=0 =>", fibonacci(0))
 print("n=1 =>", fibonacci(1))
 print("n=2 =>", fibonacci(2))
