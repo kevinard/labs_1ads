@@ -43,7 +43,7 @@ def colonne_morpion(l, valeur, colonne, joueur):
     somme = 0
 
     for i in l:
-        if i == joueur:
+        if i[colonne-1] == joueur:
             somme += i[colonne-1]
 
     return somme == valeur
@@ -58,7 +58,7 @@ def diagonale_morpion(l, valeur, diagonale, joueur):
         current_index = -1
 
     for i in l:
-        if i == joueur:
+        if i[current_index] == joueur:
             somme += i[current_index]
 
         if diagonale == 1:
